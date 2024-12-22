@@ -1,0 +1,49 @@
+.main {
+    padding: 2rem;
+    background-color: #1b1b1b;
+    color: white;
+    min-height: 100vh;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 1rem;
+  }
+  
+  .rectangle {
+    position: relative;
+    overflow: hidden; /* Ensure the image and overlay are contained */
+    border-radius: 4px;
+    border: 1px solid #333;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth zoom-in effect */
+  }
+  
+  .rectangle:hover .image {
+    transform: scale(1.1); /* Zoom in the image slightly on hover */
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: -100%; /* Initially hidden below the rectangle */
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: bottom 0.3s ease; /* Smooth slide-in effect */
+  }
+  
+  .rectangle:hover .overlay {
+    bottom: 0; /* Slide up into view on hover */
+  }
+  
