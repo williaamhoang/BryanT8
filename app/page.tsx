@@ -7,20 +7,20 @@ const Home: React.FC = () => {
       <div className={styles.grid}>
 
         {/* Alisa */}
-        <div className={styles.rectangle}>
-          <a href="/characters/alisa">
+        <a href="/characters/alisa" className={styles.link}>
+          <div className={styles.rectangle}>
             <img
               src="/images/characters/alisa-thumbnail.webp"
               alt="Alisa"
               className={styles.image}
             />
-          </a>
-          <div className={styles.overlay}>Alisa</div>
-        </div>
+            <div className={styles.overlay}>Alisa</div>
+          </div>
+        </a>
 
         {/* Asuka */}
         <div className={styles.rectangle}>
-          <a href="/characters/asuka">
+          <a href="/characters/asuka" className={styles.link}>
             <img
               src="/images/characters/asuka-thumbnail.webp"
               alt="Asuka"

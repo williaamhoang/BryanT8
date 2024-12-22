@@ -14,21 +14,6 @@ const Header: React.FC = () => {
         />
       </div>
 
-      <nav className={styles.nav}>
-        <a href="#" className={styles.navLink}>
-          Home
-        </a>
-        <a href="#" className={styles.navLink}>
-          Store
-        </a>
-        <a href="#" className={styles.navLink}>
-          Library
-        </a>
-        <a href="#" className={styles.navLink}>
-          Support
-        </a>
-      </nav>
-
       <div className={styles.search}>
         <input
           type="text"
@@ -37,9 +22,6 @@ const Header: React.FC = () => {
         />
       </div>
 
-      <div className={styles.profile}>
-        <button className={styles.profileButton}>Login</button>
-      </div>
     </header>
   );
 };
